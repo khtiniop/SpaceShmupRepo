@@ -937,6 +937,7 @@ MonoBehaviour:
   pitchMult: 30
   projectilePrefab: {fileID: 502001640005597876, guid: 80804b52d3338d5488a5f85696fd5d35, type: 3}
   projectileSpeed: 40
+  hitSound: {fileID: 8300000, guid: dffb27a0d5097a545bdb1feec555ebcf, type: 3}
   _shieldLevel: 1
 --- !u!4 &1839714517
 Transform:

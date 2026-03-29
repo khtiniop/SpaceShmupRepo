@@ -101,6 +101,7 @@ MonoBehaviour:
   fireRate: 0.3
   health: 10
   score: 100
+  hitSound: {fileID: 8300000, guid: dffb27a0d5097a545bdb1feec555ebcf, type: 3}
 --- !u!114 &-602464503344462342
 MonoBehaviour:
   m_ObjectHideFlags: 0

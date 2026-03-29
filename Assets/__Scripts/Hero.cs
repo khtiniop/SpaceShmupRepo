@@ -11,6 +11,7 @@ public class Hero : MonoBehaviour
     public float pitchMult = 30;
     public GameObject projectilePrefab;
     public float projectileSpeed = 40;
+    public AudioClip hitSound;
 
     [Header("Dynamic")][Range(0,4)] [SerializeField]
     public float _shieldLevel = 1;
@@ -58,6 +59,7 @@ public class Hero : MonoBehaviour
         projGO.transform.position = transform.position;
         Rigidbody rigidB = projGO.GetComponent<Rigidbody>();
         rigidB.velocity = Vector3.up * projectileSpeed;
+        AudioSource.PlayClipAtPoint(hitSound, transform.position);
     }
 
     void OnTriggerEnter(Collider other)

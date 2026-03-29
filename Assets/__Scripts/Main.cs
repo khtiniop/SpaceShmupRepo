@@ -13,6 +13,10 @@ public class Main : MonoBehaviour
     public float gameRestartDelay = 2;
     private BoundsCheck bndCheck;
 
+    static public int KILLS;
+     [Header("UI Fields")]
+     public UnityEngine.UI.Text killsText;
+
     void Awake ()
     {
         S=this;
@@ -56,4 +60,14 @@ public class Main : MonoBehaviour
     }
 
 
+
+
+    
+     void Update()
+    {
+        if (killsText != null)
+        {
+            killsText.text = "Kills: " + KILLS;
+        }
+    }
 }
